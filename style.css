@@ -1,0 +1,322 @@
+body {
+    background-color: #292c31;
+    font-family: 'Rubik';
+    color: #efeeee;
+}
+
+.btnList{
+    background-color: #414141;
+    font-size: 18px;
+    color: #efeeee;
+    width: 200px;
+    height: 30px;
+    margin: 30px 80px;
+  box-shadow: 6px 6px 16px 0 rgba(36, 39, 43, 0.51),
+  -6px -6px 26px 0 rgba(36, 39, 43, 0.83);
+  border: 1px solid rgba(36, 39, 43, 0.2);
+  border-radius: 12px;
+}
+
+.container_todo{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+    justify-items: center;
+    padding: 2em;
+}
+
+.todo {
+    padding: 32px;
+    min-width: 300px;
+    background-color: #34393e;
+    border-radius: 16px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerList{
+  display: flex;
+}
+
+.bthsList{
+    display: flex;
+    justify-content: end;
+}
+
+.btn_itmes{
+    margin: 0 5px;
+}
+
+.add_button {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #efeeee;
+    color: #414141;
+    box-shadow: 6px 6px 10px 0 rgba(36, 39, 43, 0.51),
+    -6px -6px 16px 0 rgba(36, 39, 43, 0.83);
+    border: 1px solid rgba(36, 39, 43, 0.2);
+    outline: none;
+    cursor: pointer;
+}
+
+.create_button {
+     display: flex;
+     align-self: center;
+     width: 32px;
+     height: 32px;
+     border-radius: 50%;
+     background-color: #efeeee;
+     color: #414141;
+     box-shadow: 6px 6px 10px 0 rgba(36, 39, 43, 0.51),
+     -6px -6px 16px 0 rgba(36, 39, 43, 0.83);
+     border: 1px solid rgba(36, 39, 43, 0.2);
+     outline: none;
+     cursor: pointer;
+}
+
+.create_icon {
+   margin-left: 3px;
+}
+
+.add_icon {
+    margin-left: 2px;
+}
+
+.add_button:active {
+    box-shadow: inset -3px -3px 6px 0 rgba(36, 39, 43, 0.83),
+    inset 3px 3px 6px rgba(36, 39, 43, 0.51);
+}
+
+.create_button:active {
+    box-shadow: inset -3px -3px 6px 0 rgba(36, 39, 43, 0.83),
+        inset 3px 3px 6px rgba(36, 39, 43, 0.51);
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.task {
+    margin: 16px 0;
+    padding: 8px;
+    display: flex;
+    box-shadow: 6px 6px 16px 0 rgba(36, 39, 43, 0.51),
+    -6px -6px 26px 0 rgba(36, 39, 43, 0.83);
+    border: 1px solid rgba(36, 39, 43, 0.2);
+    border-radius: 12px;
+}
+
+.task_checkbox {
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    background-color: transparent;
+}
+
+.task_text {
+    transition: 0.3s;
+    flex-grow: 1;
+    margin-top: 10px;
+
+}
+
+.task_done .task_text {
+    color: #73767a;
+}
+
+.task_title {
+    margin: 0;
+    font-size: 20px;
+}
+
+.task_message {
+    margin: 0;
+    font-size: 14px;
+}
+
+.task_edit {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.edit_button {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    color: #efeeee;
+}
+
+.edit_button_list {
+    display: flex;
+    width: 32px;
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    color: #efeeee;
+}
+
+.remove_button {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+    color: #ff6960;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+}
+
+.remove_button_list {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+    color: #ff6960;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+}
+
+.newTitle,
+.newMessage {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    padding: 5px;
+    margin-top: 3px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    width: 100px;
+    word-wrap: break-word;
+}
+
+.editBtn {
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    margin-left: 5px;
+    background-color: #34393e;
+}
+
+.modal_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #efeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    animation: 0.3s fadeIn;
+    display: none;
+}
+
+.modal_window {
+    padding: 32px;
+    background-color: #34393e;
+    border-radius: 16px;
+}
+
+.modal_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal_input {
+    margin-bottom: 16px;
+    padding: 12px;
+    font-family: 'Rubik', sans-serif;
+    background-color: transparent;
+    border: none;
+    color: #efeeee;
+    border-radius: 16px;
+     box-shadow: 6px 6px 16px 0 rgba(36, 39, 43, 0.51),
+     -6px -6px 26px 0 rgba(36, 39, 43, 0.83);
+    resize: vertical;
+    outline: none;
+    transition: 0.3s;
+}
+
+.modal-input::placeholder {
+   color: #efeeee;
+}
+
+.modal_input:focus {
+    background-color: #292c31;
+    box-shadow: none;
+}
+
+.modal_footer {
+    text-align: center;
+}
+
+.modal_button {
+    padding: 12px;
+    background-color: transparent;
+    border: none;
+    border-radius: 12px;
+    color: #efeeee;
+     box-shadow: 6px 6px 16px 0 rgba(36, 39, 43, 0.51),
+     -6px -6px 26px 0 rgba(36, 39, 43, 0.83);
+    cursor: pointer;
+    outline: none;
+}
+
+.modal_button:active {
+     box-shadow: 6px 6px 16px 0 rgba(84, 89, 95, 0.51),
+     -6px -6px 26px 0 rgba(84, 89, 95, 0.83);
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.dragHide {
+    display: none;
+
+}
+
+.dragHovered {
+    background-color: #3f3f3f;
+}
