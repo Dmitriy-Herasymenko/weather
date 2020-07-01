@@ -59,14 +59,14 @@ const outerHTML = (current, hours) => {
 };
 
 const getRequestHours = async (city) => {
-    const url = `http://api.openweathermap.org/data/2.5/forecast?q=${city},ua&appid=a20bf99ce39cb8699facac67d0c5e013`;
+    const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city},ua&appid=a20bf99ce39cb8699facac67d0c5e013`;
     const response = await fetch(url);
     return response.json();
 
 };
 
 const getRequestCurrentForecast = async (city) => {
-    const url = `http://api.openweathermap.org/data/2.5/weather?q=${city},ua&appid=a20bf99ce39cb8699facac67d0c5e013`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city},ua&appid=a20bf99ce39cb8699facac67d0c5e013`;
     const response = await fetch(url);
     return await response.json();
 };
