@@ -4,37 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDoList</title>
+    <title>Wheather</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <button class="btnList">ADD TO-DO-LIST</button>
-    <section class="container_todo">
-    </section>
-
-    <div class="modal_overlay">
-        <section class="modal_window">
-            <header class="modal_header">
-                <h2 class="modal_title">New task</h2>
-            </header>
-            <div class="modal_form">
-                <input class="modal_input" id="title" type="text" placeholder="Title" />
-                <textarea class="modal_input" id="message" type="text" placeholder="Message"></textarea>
-            </div>
-            <footer class="modal_footer">
-                <button class="modal_button" type="button">Create</button>
-            </footer>
-        </section>
+<form autocomplete="off" action="/action_page.php" class="form">
+    <div class="autocomplete" >
+        <input id="myInput" type="text" name="myCountry" class="city" placeholder="Tape your City">
     </div>
+    <button type="button" class="btn" >
+                <ion-icon name="search-outline" class="search"></ion-icon>
+    </button>
+</form>
+<!--<div class="button">-->
+<!--    <input type="text" id="myInput" class="city" value="" placeholder="Введите город">-->
+<!--    <button type="button" class="btn" >-->
+<!--        <ion-icon name="search-outline" class="search"></ion-icon>-->
+<!--    </button>-->
+<!--</div>-->
+<div class="container">
+    <div class="weather">
 
+    </div>
+</div>
 
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 
-
-
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
-    <script src="js.js"></script>
+<script src="js.js"></script>
+<script src="autocomplete.js"></script>
 </body>
 
 </html>
