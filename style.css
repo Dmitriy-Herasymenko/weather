@@ -3,7 +3,7 @@ body {
     font-family: 'Rubik';
 }
 
-.form{
+.form {
     display: flex;
     justify-content: center;
     margin-top: 50px;
@@ -13,20 +13,24 @@ body {
     position: relative;
     display: inline-block;
 }
+
 input {
     border: 1px solid transparent;
     background-color: #f1f1f1;
-    padding: 10px;
+    padding: 11px;
     font-size: 16px;
 }
+
 input[type=text] {
     background-color: #f1f1f1;
     width: 100%;
 }
+
 input[type=submit] {
     background-color: DodgerBlue;
     color: #fff;
 }
+
 .autocomplete-items {
     position: absolute;
     border: 1px solid #d4d4d4;
@@ -37,34 +41,37 @@ input[type=submit] {
     left: 0;
     right: 0;
 }
+
 .autocomplete-items div {
     padding: 10px;
     cursor: pointer;
     background-color: #fff;
     border-bottom: 1px solid #d4d4d4;
 }
+
 .autocomplete-items div:hover {
     background-color: #e9e9e9;
 }
+
 .autocomplete-active {
     background-color: DodgerBlue !important;
     color: #ffffff;
 }
 
-.button{
+.button {
     display: flex;
     justify-content: center;
     margin-top: 50px;
 }
 
-.city{
+.city {
     background-color: #fff;
     width: 300px;
     height: 30px;
     padding: 5px;
 }
 
-.btn{
+.btn {
     background-color: #f8c309;
     width: 70px;
     height: 42px;
@@ -100,7 +107,7 @@ input[type=submit] {
     font-size: 22px;
 }
 
-.search{
+.search {
     color: #fff;
 }
 
@@ -109,7 +116,7 @@ input[type=submit] {
     flex-direction: column;
 }
 
-.img{
+.img {
     width: 140px;
     margin-right: 70px;
 }
